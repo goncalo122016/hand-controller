@@ -1,0 +1,12 @@
+{
+  "name": "hand-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd hand_backend && node server.js",
+    "start-frontend": "cd hand_frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
